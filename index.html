@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolbar Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <div class="heading">
+                <span class="icon" onclick="toggleSidenav()">&#9776;</span>
+                <img class="image" src="https://bizx.infinite.com/dist/assets/images/Revers-Logo.png"
+                    alt="Company Logo">
+                <p class="name">Infinite Computer Solutions (India) Ltd.</p>
+                <!-- <span class="name">Infinite Computer Solutions (India) Ltd.</span> -->
+            </div>
+            <a href="login.html">
+            <div class="logout-btn" >
+             LogOut 
+                <div class="logout-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                        <path fill-rule="evenodd"
+                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                    </svg>
+                </div>
+            </div></a> 
+        </div>
+        <div class="Alert">
+            <h5>Payment Received successfully!</h5>
+        </div>
+        <div class="app-container">
+            <div class="main-content">
+                <div class="mt-5">
+                    <div class="admin-container-boundary" id="cvmsDetails">
+                        <h2 class="boundary-heading">CVMS Details</h2>
+                        <div class="row  admin_container">
+                            <!-- *************************************** -->
+                            <div class="col-md-4 col-sm-6 col-lg-3 card shadow-effect "
+                                routerLink="/dashboard/vendor-list">
+                                <div class="card-body text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#e8eaed">
+                                        <path
+                                            d="M186.67-120q-27 0-46.84-19.83Q120-159.67 120-186.67v-586.66q0-27 19.83-46.84Q159.67-840 186.67-840h194q3.33-36.67 32-63.67 28.66-27 67.33-27t67.33 27q28.67 27 32 63.67h194q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H186.67ZM480-811.33q13 0 21.5-8.5t8.5-21.5q0-13-8.5-21.5t-21.5-8.5q-13 0-21.5 8.5t-8.5 21.5q0 13 8.5 21.5t21.5 8.5ZM186.67-226.67q58-55 132.43-88.16Q393.53-348 479.93-348t160.9 33.17q74.5 33.16 132.5 88.16v-546.66H186.67v546.66Zm294.66-200.66q58 0 98.34-40.34Q620-508 620-566t-40.33-98.33q-40.34-40.34-98.34-40.34T383-664.33Q342.67-624 342.67-566T383-467.67q40.33 40.34 98.33 40.34ZM250-186.67h460V-196q-50-42.33-108.33-63.83-58.34-21.5-121.67-21.5t-121.67 21.5Q300-238.33 250-196V-186.67ZM481.33-494q-30 0-51-21t-21-51q0-30 21-51t51-21q30 0 51 21t21 51q0 30-21 51t-51 21Zm-1.33-6.33Z" />
+                                    </svg>
+                                    <div class="vertical"></div>
+                                    <div style="width: 180px">
+                                        <h2 class="text-theme-primary">Vendors</h2>
+                                        <p>50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ********************************* -->
+                            <div routerLink="/dashboard/client-list"
+                                class="col-md-4  col-lg-3  col-sm-6 card shadow-effect ">
+                                <div class="card-body text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#e8eaed">
+                                        <path
+                                            d="M38.67-160v-100q0-34.67 17.83-63.17T105.33-366q69.34-31.67 129.67-46.17 60.33-14.5 123.67-14.5 63.33 0 123.33 14.5T611.33-366q31 14.33 49.17 42.83T678.67-260v100h-640Zm706.66 0v-102.67q0-56.66-29.5-97.16t-79.16-66.84q63 7.34 118.66 22.5 55.67 15.17 94 35.5 34 19.34 53 46.17 19 26.83 19 59.83V-160h-176ZM358.67-480.67q-66 0-109.67-43.66Q205.33-568 205.33-634T249-743.67q43.67-43.66 109.67-43.66t109.66 43.66Q512-700 512-634t-43.67 109.67q-43.66 43.66-109.66 43.66ZM732-634q0 66-43.67 109.67-43.66 43.66-109.66 43.66-11 0-25.67-1.83-14.67-1.83-25.67-5.5 25-27.33 38.17-64.67Q578.67-590 578.67-634t-13.17-80q-13.17-36-38.17-66 12-3.67 25.67-5.5 13.67-1.83 25.67-1.83 66 0 109.66 43.66Q732-700 732-634ZM105.33-226.67H612V-260q0-14.33-8.17-27.33-8.16-13-20.5-18.67-66-30.33-117-42.17-51-11.83-107.66-11.83-56.67 0-108 11.83-51.34 11.84-117.34 42.17-12.33 5.67-20.16 18.67-7.84 13-7.84 27.33v33.33Zm253.34-320.66q37 0 61.83-24.84Q445.33-597 445.33-634t-24.83-61.83q-24.83-24.84-61.83-24.84t-61.84 24.84Q272-671 272-634t24.83 61.83q24.84 24.84 61.84 24.84Zm0 320.66Zm0-407.33Z" />
+                                    </svg>
+                                    <div class="vertical"></div>
+                                    <div style="width: 180px">
+                                        <h2 class="text-theme-primary">Clients</h2>
+                                        <p>50</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div routerLink="/dashboard/project-list"
+                                class="col-md-4  col-lg-3  col-sm-6 card shadow-effect ">
+                                <div class="card-body text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#e8eaed">
+                                        <path
+                                            d="M764-120 523.67-360.33l66-66L830-186l-66 66Zm-571.33 0-66-66L412-471.33l-94-94-24.67 24.66L247-587v84l-25.33 25.33L100-599.33l25.33-25.34H210l-48.67-48.66L296-808q18-18 39-25t45-7q24 0 45 8.67 21 8.66 39 26.66l-102 102L410.67-654l-25.34 25.33 92 92L588.67-648q-6.67-12.33-10.5-27.67-3.84-15.33-3.84-32 0-55 39.17-94.16Q652.67-841 707.67-841q15 0 26.5 3t20.83 8.33L665.33-740l74 74L829-755.67q5.67 10 8.83 22.17 3.17 12.17 3.17 27.17 0 55-39.17 94.16Q762.67-573 707.67-573q-16 0-28.67-2.33-12.67-2.34-23.67-7.34L192.67-120Z" />
+                                    </svg>
+                                    <div class="vertical"></div>
+                                    <div style="width: 180px;">
+                                        <h2 class="text-theme-primary">Projects</h2>
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div routerLink="/dashboard/profitloss"
+                                class="col-md-4  col-lg-3  col-sm-6 card shadow-effect ">
+                                <div class="card-body text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#e8eaed">
+                                        <path
+                                            d="M513.33-385.33H580v-128h128V-580H580v-128h-66.67v128h-128v66.67h128v128ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z" />
+                                    </svg>
+                                    <div class="vertical"></div>
+                                    <div style="width: 180px;">
+                                        <h2 class="text-theme-primary">Profit & Loss</h2>
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--***************************************  -->
+                            <!-- <div class="col-md-4  col-lg-3  col-sm-6 card shadow-effect ">
+                  <div class="card-body text-center">
+                    <h1 class="text-theme-primary"><mat-icon>currency_rupee</mat-icon></h1>
+                    <div class="vertical"></div>
+                    <div style="width: 180px">
+                      <h2 class="text-theme-primary">Payment Received</h2>
+                      <p>{{ paymentReceived | currency:'INR'}}</p>
+                    </div>
+                  </div>
+                </div> -->
+                        </div>
+                    </div>
+                    <div class="invoiceBoundary">
+                        <div class="admin-container-boundary" id="invoices">
+                            <h2 class="boundary-heading">Accounts Receivable</h2>
+                            <div class="row  admin_container">
+                                <!-- ******************************* -->
+                                <div routerLink="/dashboard/unpaidinvoice"
+                                    class="col-md-4  col-lg-3  col-sm-6 card shadow-effect ">
+                                    <div class="card-body text-center" id="scard">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                            width="40px" fill="#e8eaed">
+                                            <path
+                                                d="M228-80q-45.83 0-77.92-32.08Q118-144.17 118-190v-123.33h124.67V-880l59.86 60 59.87-60 59.87 60 59.86-60L542-820l60-60 60 60 60-60 60 60 60-60v690q0 45.83-32.08 77.92Q777.83-80 732-80H228Zm504-66.67q19 0 31.17-12.16Q775.33-171 775.33-190v-583.33h-466v460h379.34V-190q0 19 12.16 31.17Q713-146.67 732-146.67Zm-374-468v-66.66h240v66.66H358Zm0 129.34V-552h240v66.67H358Zm328.67-129.34q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83 13.66 0 23.5 9.83Q720-661.67 720-648t-9.83 23.5q-9.84 9.83-23.5 9.83Zm0 126q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83 13.66 0 23.5 9.83Q720-535.67 720-522t-9.83 23.5q-9.84 9.83-23.5 9.83Zm-459.34 342H622v-100H184.67V-190q0 19 12.26 31.17 12.27 12.16 30.4 12.16Zm-42.66 0v-100 100Z" />
+                                        </svg>
+                                        <div class="vertical"></div>
+                                        <div style="width: 180px">
+                                            <h2 class="text-theme-primary">Unpaid Invoices</h2>
+                                            <p>15000$</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ******************************************* -->
+
+                                <div routerLink="/dashboard/invoicelist"
+                                    class="col-md-4  col-lg-3  col-sm-3 card shadow-effect ">
+                                    <div class="card-body text-center" id="scard">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                            width="40px" fill="#e8eaed">
+                                            <path
+                                                d="M620-160.33 456.67-323.67 504-371l116 116 234.67-234.67L902-442.33l-282 282Zm220-408.34h-66.67v-204.66h-66.66v100H253.33v-100h-66.66v586.66H434V-120H186.67q-28.34 0-47.5-19.17Q120-158.33 120-186.67v-586.66q0-28.34 19.17-47.5Q158.33-840 186.67-840H377q8.33-35 37.33-57.5T480-920q37.33 0 66.17 22.5Q575-875 583.33-840h190q28.34 0 47.5 19.17Q840-801.67 840-773.33v204.66ZM480-773.33q17 0 28.5-11.5t11.5-28.5q0-17-11.5-28.5t-28.5-11.5q-17 0-28.5 11.5t-11.5 28.5q0 17 11.5 28.5t28.5 11.5Z" />
+                                        </svg>
+                                        <div class="vertical"></div>
+                                        <div style="width: 180px">
+                                            <h2 class="text-theme-primary">Paid Invoices</h2>
+                                            <p>15000$</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ********************************************************* -->
+
+                            </div>
+
+                        </div>
+
+                        <div class="admin-container-boundary" id="invoices">
+                            <h2 class="boundary-heading">Accounts Payable</h2>
+                            <div class="row  admin_container">
+                                <!-- ******************************* -->
+                                <div routerLink="/dashboard/vendor-unpaid-invoices"
+                                    class="col-md-4  col-lg-3  col-sm-6 card shadow-effect ">
+                                    <div class="card-body text-center" id="scard">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                            width="40px" fill="#e8eaed">
+                                            <path
+                                                d="M319.33-246.67h321.34v-66.66H319.33v66.66Zm0-166.66h321.34V-480H319.33v66.67ZM226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-666.66q0-27 19.83-46.84Q199.67-880 226.67-880H574l226 226v507.33q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm314-542.67v-190.66h-314v666.66h506.66v-476H540.67Zm-314-190.66v190.66-190.66 666.66-666.66Z" />
+                                        </svg>
+                                        <div class="vertical"></div>
+                                        <div style="width: 180px">
+                                            <h2 class="text-theme-primary">Unpaid Invoices</h2>
+                                            <p>15000$</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ******************************************* -->
+
+                                <div routerLink="/dashboard/vendor-paid-invoices"
+                                    class="col-md-4  col-lg-3  col-sm-6 card shadow-effect ">
+                                    <div class="card-body text-center" id="scard">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                            width="40px" fill="#e8eaed">
+                                            <path
+                                                d="m435.33-250 228-228L618-523.33l-183 183L338.33-437l-45 45 142 142ZM226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-666.66q0-27 19.83-46.84Q199.67-880 226.67-880H574l226 226v507.33q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm314-542.67v-190.66h-314v666.66h506.66v-476H540.67Zm-314-190.66v190.66-190.66 666.66-666.66Z" />
+                                        </svg>
+                                        <div class="vertical"></div>
+                                        <div style="width: 180px">
+                                            <h2 class="text-theme-primary">Paid Invoices</h2>
+                                            <p>15000$</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ********************************************************* -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <router-outlet></router-outlet>
+
+            </div>
+        </div>
+        <img class="graph" src="/images/img1.jpg" alt="">
+        <img  class="graph"src="/images/img2.jpg" alt="">
+        <img class="graph" src="/images/img3.jpg" alt="">
+    </div>
+
+    <script>
+        function toggleSidenav() {
+            // Add your side navigation toggle logic here
+            alert('Sidenav toggled!');
+        }
+
+        function logout() {
+            // Add your logout logic here
+            window.location.href = '/login';
+        }
+    </script>
+</body>
+
+</html>
